@@ -22,6 +22,7 @@ public class PostfixCalculatorUpdate {
         Stack<Integer> stack = new Stack<>();
         String[] elements = postfixExpression.split("\\s+"); // split by one or more spaces
 
+
         for (String element : elements) {
             if (element.matches("\\d+")) { // check if token is a number (one or more digits)
                 stack.push(Integer.parseInt(element));
